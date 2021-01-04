@@ -17,6 +17,8 @@
   --accent-color: #2196f3;
   --secondary-command-color: #f5f4fa;
   --footer-link-color: rgba(255, 255, 255, 0.6);
+
+  --card-table: 30px;
 }
 
 /* Стили для index.html */
@@ -233,14 +235,14 @@ a {
 .main-item {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
+  margin-left: calc(-1 * var(--card-table));
+  margin-top: calc(-1 * var(--card-table));
 }
 
-.item {
-  margin-left: 30px;
-  margin-top: 30px;
-  flex-basis: calc(100% / 4 - 30px);
+.main-item .item {
+  margin-left: var(--card-table);
+  margin-top: var(--card-table);
+  flex-basis: calc(100% / 4 - var(--card-table));
 }
 
 .advant-title {
@@ -298,14 +300,14 @@ a {
 .link-flex {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
+  margin-left: calc(-1 * var(--card-table));
+  margin-top: calc(-1 * var(--card-table));
 }
 
 .link-flex .item-link {
-  margin-left: 30px;
-  margin-top: 30px;
-  flex-basis: calc(100% / 3 - 30px);
+  margin-left: var(--card-table);
+  margin-top: var(--card-table);
+  flex-basis: calc(100% / 3 - var(--card-table));
 }
 
 .img {
@@ -325,7 +327,7 @@ a {
 
 .section-command .section-work {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 16px;
 
   font-weight: 400;
   font-size: 16px;
