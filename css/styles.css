@@ -91,7 +91,22 @@ a {
 }
 
 .current {
+  position: relative;
   color: var(--accent-color);
+}
+
+.site-nav .current::after {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+
+  content: '';
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  display: block;
+
+  background-color: var(--accent-color);
 }
 
 .nav-link-logo:hover,
@@ -264,6 +279,8 @@ a {
   font-size: 14px;
   line-height: 1.71;
 }
+
+/* icon */
 /* Наши приемущество */
 
 .item-icon {
@@ -312,6 +329,31 @@ a {
 
 .img {
   margin-bottom: 30px;
+}
+
+.section .item-link {
+  position: relative;
+}
+
+.img-text {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 27px 0;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: var(--primary-white-color);
+  background-color: rgba(47, 48, 58, 0.8);
 }
 
 .section-title.section-name {
@@ -633,7 +675,7 @@ a {
 
 .pic-link:focus,
 .pic-link:hover {
-  display: inline-block;
+  display: block;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -645,4 +687,33 @@ a {
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
+}
+
+.pic-img {
+  position: relative;
+}
+
+.pic-text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  opacity: 0;
+
+  top: 0;
+  left: 0;
+  background-color: rgba(33, 150, 243, 0.9);
+
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 63px 24px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+
+  color: var(--primary-white-color);
+}
+
+.pic-link:hover .pic-text {
+  opacity: 1;
 }
