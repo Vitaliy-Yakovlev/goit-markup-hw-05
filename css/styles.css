@@ -90,6 +90,8 @@ a {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  transition: color 250ms var(--cubic-bezier);
 }
 
 .current {
@@ -114,6 +116,8 @@ a {
 .nav-link-logo:hover,
 .nav-link-logo:focus {
   color: var(--accent-color);
+
+  transition: color 250ms var(--cubic-bezier);
 }
 
 .nav-link-logo {
@@ -231,6 +235,9 @@ a {
   letter-spacing: 0.06em;
 
   cursor: pointer;
+
+  transition: color 250ms var(--cubic-bezier),
+    background-color 250ms var(--cubic-bezier);
 }
 
 .hero-button:hover,
@@ -430,6 +437,8 @@ a {
   height: 44px;
   border-radius: 50%;
   fill: #afb1b8;
+
+  transition: background-color 250ms var(--cubic-bezier);
 }
 
 .link-network:hover,
@@ -455,6 +464,8 @@ a {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   fill: #afb1b8;
+
+  transition: fill 250ms var(--cubic-bezier);
 }
 
 .link-svg:hover,
@@ -526,6 +537,8 @@ a {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+
+  transition: color 250ms var(--cubic-bezier);
 }
 
 .address-link {
@@ -575,7 +588,9 @@ a {
   height: 44px;
   border-radius: 50%;
   fill: var(--primary-white-color);
-  background: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
+
+  transition: background-color 250ms var(--cubic-bezier);
 }
 
 .link-network-footer:first-child {
@@ -608,6 +623,9 @@ a {
   line-height: 1.62;
 
   cursor: pointer;
+
+  transition: background-color 250ms var(--cubic-bezier),
+    color 250ms var(--cubic-bezier);
 }
 
 .button:hover,
