@@ -91,7 +91,11 @@ a {
   line-height: 1.14;
   letter-spacing: 0.02em;
 
-  transition: color 250ms var(--cubic-bezier);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic-bezier);
+
+  /* transition: color 250ms var(--cubic-bezier); */
 }
 
 .current {
@@ -117,7 +121,11 @@ a {
 .nav-link-logo:focus {
   color: var(--accent-color);
 
-  transition: color 250ms var(--cubic-bezier);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic-bezier);
+
+  /* transition: color 250ms var(--cubic-bezier); */
 }
 
 .nav-link-logo {
@@ -236,8 +244,12 @@ a {
 
   cursor: pointer;
 
-  transition: color 250ms var(--cubic-bezier),
-    background-color 250ms var(--cubic-bezier);
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic-bezier);
+
+  /* transition: color 250ms var(--cubic-bezier),
+    background-color 250ms var(--cubic-bezier); */
 }
 
 .hero-button:hover,
@@ -438,7 +450,11 @@ a {
   border-radius: 50%;
   fill: #afb1b8;
 
-  transition: background-color 250ms var(--cubic-bezier);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic-bezier);
+
+  /* transition: background-color 250ms var(--cubic-bezier); */
 }
 
 .link-network:hover,
@@ -465,7 +481,11 @@ a {
   border-radius: 4px;
   fill: #afb1b8;
 
-  transition: fill 250ms var(--cubic-bezier);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic-bezier);
+
+  /* transition: fill 250ms var(--cubic-bezier); */
 }
 
 .link-svg:hover,
@@ -538,7 +558,11 @@ a {
   font-size: 14px;
   line-height: 1.71;
 
-  transition: color 250ms var(--cubic-bezier);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic-bezier);
+
+  /* transition: color 250ms var(--cubic-bezier); */
 }
 
 .address-link {
@@ -590,7 +614,11 @@ a {
   fill: var(--primary-white-color);
   background-color: rgba(255, 255, 255, 0.1);
 
-  transition: background-color 250ms var(--cubic-bezier);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic-bezier);
+
+  /* transition: background-color 250ms var(--cubic-bezier); */
 }
 
 .link-network-footer:first-child {
@@ -624,8 +652,12 @@ a {
 
   cursor: pointer;
 
-  transition: background-color 250ms var(--cubic-bezier),
-    color 250ms var(--cubic-bezier);
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic-bezier);
+
+  /* transition: background-color 250ms var(--cubic-bezier),
+    color 250ms var(--cubic-bezier); */
 }
 
 .button:hover,
@@ -732,7 +764,12 @@ a {
   line-height: 1.56;
 
   transform: translateY(101%);
-  transition: transform 250ms var(--cubic-bezier);
+
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic-bezier);
+
+  /* transition: transform 250ms var(--cubic-bezier); */
 }
 
 .pic-link:hover .pic-text,
@@ -757,7 +794,12 @@ a {
   background-color: rgba(0, 0, 0, 0.2);
 
   opacity: 1;
-  transition: opacity 250ms var(--cubic-bezier);
+
+  transition-property: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic-bezier);
+
+  /* transition: opacity 250ms var(--cubic-bezier); */
 }
 
 .backdrop.is-hidden .modal {
@@ -778,7 +820,12 @@ a {
   border-radius: 4px;
 
   transform: scale(1) translate(-50%, -50%);
-  transition: transform 250ms var(--cubic-bezier);
+
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic-bezier);
+
+  /* transition: transform 250ms var(--cubic-bezier); */
 }
 
 .modal-btn {
