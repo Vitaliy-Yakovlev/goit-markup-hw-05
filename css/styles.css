@@ -140,7 +140,6 @@ a {
 
 .site-nav > .item > .link:hover::before,
 .site-nav > .item > .link:focus::before {
-  position: absolute;
   color: var(--accent-color);
 
   transform: scaleX(1);
